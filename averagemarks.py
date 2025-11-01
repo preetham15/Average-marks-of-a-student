@@ -10,7 +10,7 @@ for i in range(n):
     for j in range(3):
         mark = float(input(f"Enter marks for subject {j+1}: "))
         total += mark
-    average = total // 3
+    average = total / 3
     students[name] = average
  
 print("\nStudent Averages:")
@@ -20,7 +20,6 @@ for name, avg in students.items():
 # Find top student
 topper = max(students, key=students.get)
 print(f"\nTop student is {topper} with average {students[topper]:.2f}")
-
 # Find bottom student
 min_scored = min(students, key=students.get)
 print(f"\nMin Scored student is {min_scored} with average {students[min_scored]:.2f}
